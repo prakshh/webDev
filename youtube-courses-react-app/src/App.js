@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+// import Header from "./components/Header";
+import { Button } from 'reactstrap';
+import { ToastContainer, toast} from 'react-toastify';
+// import { POSITION } from 'react-toastify/dist/utils';
+import 'react-toastify/dist/ReactToastify.css';
+import Home from './components/Home';
 
 function App() {
+
+  const btnHandle = () => {
+    // toast("this is my first message");
+    toast.error("done", {position: 'top-center'});
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToastContainer />
+      <Home/>
+        <p>ootstrap compnoent</p>
+        <Button color="warning" outine onClick={btnHandle}>
+          react button 
+        </Button>
+
     </div>
   );
 }
