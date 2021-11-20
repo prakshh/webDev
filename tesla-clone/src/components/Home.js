@@ -52,7 +52,7 @@ function Home() {
                 description=""
                 backgroundImg="accessories.jpg"
                 leftBtnText="Shop now"
-                // rightBtnText="Learn more"
+                // rightBtnText="Learn more" 
             />
         </Container>
     )
