@@ -50,6 +50,11 @@ const Menu = styled.div`
         padding: 0 10px;
         flex-wrap: nowrap;
     }
+    @media(max-width: 768px){
+        display: none;
+    }
+
+
 `
 const RightMenu = styled.div`
     display: flex;
