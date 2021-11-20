@@ -9,15 +9,18 @@ function Section() {
                 <h1>Model S</h1>
                 <p>Order online for touchless delivery</p>
             </ItemText>
-            <ButtonGroup>
-                <LeftButton>
-                    Custom Order
-                </LeftButton>
-                <RightButton>
-                    Existing Inventory
-                </RightButton>
-            </ButtonGroup>
-            <DownArrow src="/images/down-arrow.svg" /> 
+
+            <Buttons>
+                <ButtonGroup>
+                    <LeftButton>
+                        Custom Order
+                    </LeftButton>
+                    <RightButton>
+                        Existing Inventory
+                    </RightButton>
+                </ButtonGroup>
+                <DownArrow src="/images/down-arrow.svg" />
+            </Buttons> 
         </Wrap>
     )
 }
@@ -33,7 +36,7 @@ const Wrap = styled.div`
     background-image: url('/images/model-s.jpg');
     display: flex;
     flex-direction: column;
-    justify-content: space-between; //vertical alignment
+    justify-content: space-between; //vertical alignment // works in providing space between 2 components of Wrap - ItemText and Buttons  
     align-items: center; // horizontal alignment
 `
 
@@ -67,3 +70,4 @@ const DownArrow = styled.img`
     margin-top: 20px;
     height: 40px;
 `
+const Buttons = styled.div``
