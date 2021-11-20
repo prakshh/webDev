@@ -47,6 +47,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
     display: flex;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 const LeftButton = styled.div`
     background-color: rgba(23, 26, 32, 0.8);
