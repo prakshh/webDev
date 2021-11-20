@@ -17,7 +17,7 @@ function Section() {
                     Existing Inventory
                 </RightButton>
             </ButtonGroup>
-            <DownArrow src="/images/down-arrow.svg" />
+            <DownArrow src="/images/down-arrow.svg" /> 
         </Wrap>
     )
 }
