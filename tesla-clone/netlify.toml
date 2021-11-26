@@ -1,0 +1,4 @@
+[build]
+  base    = "https://github.com/prakshh/webDev/tree/main/tesla-clone"
+  publish = "https://github.com/prakshh/webDev/tree/main/tesla-clone/dist/"
+  command = "yarn install"
